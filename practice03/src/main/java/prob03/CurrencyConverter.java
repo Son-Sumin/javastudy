@@ -11,7 +11,7 @@ public class CurrencyConverter {
 //		BigDecimal R = new BigDecimal(rate);
 //		return W.divide(R, 1, BigDecimal.ROUND_DOWN);
 		
-		return (long)(won / rate);
+		return won / rate;
 		
 	}
 
@@ -23,8 +23,8 @@ public class CurrencyConverter {
 		return (float)(dollar * rate);
 	}
 
-	public void setRate(double r) {
-		this.rate = rate;
+	public static void setRate(double r) {
+		CurrencyConverter.rate = r;
 	}
 
 }
