@@ -5,6 +5,7 @@ package prob03;
 public class CurrencyConverter {
 	private static double rate;
 
+
 	public static double toDollar(double won) {
 //		BigDecimal W = new BigDecimal(won);
 //		BigDecimal R = new BigDecimal(rate);
@@ -22,8 +23,8 @@ public class CurrencyConverter {
 		return (float)(dollar * rate);
 	}
 
-	public static void setRate(double r) {
-		// 환율 설정(KRW/$1)
+	public void setRate(double r) {
+		this.rate = rate;
 	}
 
 }
