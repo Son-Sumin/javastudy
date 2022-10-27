@@ -1,4 +1,4 @@
-package paint;
+package com.bitacademy.paint.point;
 
 public class ColorPoint extends T8Point {
 	private String color;

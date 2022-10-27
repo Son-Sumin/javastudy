@@ -1,4 +1,4 @@
-package paint;
+package com.bitacademy.paint.i;
 
 public interface Drawable {
 	void draw();
@@ -22,6 +22,9 @@ public interface Drawable {
 * 여러의 인터페이스를 하나의 기능으로 모으는 것
 * 
 * 어떤 interface 영향을 받고 있을까? 
+* reference instanceof 상위/하위 클래스  - boolean
 *    ex. Shape c = new Circle();
 *        System.out.println(c instanceof Drawable);
+* 
+* 하지만 interface는 hierachy와 상관없이 instanceof 연산자를 사용할 수 있다.
 */

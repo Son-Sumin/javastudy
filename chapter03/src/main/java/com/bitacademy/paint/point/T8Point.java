@@ -1,4 +1,6 @@
-package paint;
+package com.bitacademy.paint.point;
+
+import com.bitacademy.paint.i.Drawable;
 
 public class T8Point implements Drawable{
 	private int x;
