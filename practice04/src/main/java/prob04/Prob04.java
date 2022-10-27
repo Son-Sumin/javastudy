@@ -7,3 +7,6 @@ public class Prob04 {
 		pt.getInformation();
 	}
 }
+
+// Depart를 Employee에서 상속받아서 만들어라
+// like colorPoint, point

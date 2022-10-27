@@ -11,3 +11,5 @@ public class PrinterTest {
 		printer.println( "홍길동" );
 	}
 }
+
+// println overload

@@ -21,3 +21,5 @@ public class DropShip{
 		/* 선택된 대상을 내린다.*/ 
 	}
 }
+
+// 각 공통점을 찾아서 Unit 부모클래스를 만들어 상속시켜보기 like Shape, 실행 없음
