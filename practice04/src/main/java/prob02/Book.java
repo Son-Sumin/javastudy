@@ -6,8 +6,9 @@ public class Book {
 	private String author;
 	private int stateCode; // 0: 대여중, 1: 재고있음
 	
-	public Book() {
-	}
+//	public Book() {
+//		
+//	}
 
 	public Book(int bookNo, String title, String author) {
 		this.bookNo = bookNo;
@@ -48,6 +49,9 @@ public class Book {
 	}
 
 	public void print() {
-			System.out.println("책 제목: " + title + ", 작가: " + author + ", 대여 유무:" + (stateCode == 1 ? "재고있음" : "대여중"));
+			System.out.println(
+					"책 제목: "   + title + 
+					", 작가: "    + author + 
+					", 대여 유무:" + (stateCode == 1 ? "재고있음" : "대여중"));
 	}
 }
