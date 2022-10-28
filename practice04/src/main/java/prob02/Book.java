@@ -45,7 +45,7 @@ public class Book {
 	}
 
 	public void rent() {
-		
+		//Book[] list = new Book[];
 	}
 
 	public void print() {
