@@ -8,4 +8,4 @@ public class Prob04 {
 	}
 }
 
-// like colorPoint, point
+// like ColorPoint, Point

@@ -5,10 +5,10 @@ public class Employee {
 	private int salary;
 
 	 // 기본 생성자
-	public Employee() {
-	}
+//	public Employee() {
+//	}
 
-	Employee(String name, int salary) {
+	public Employee(String name, int salary) {
 		this.name = name;
 		this.salary = salary;
 	}
