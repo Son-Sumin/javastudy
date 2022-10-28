@@ -4,7 +4,8 @@ public class Employee {
 	private String name;
 	private int salary;
 
-	public Employee() {  // 기본 생성자
+	 // 기본 생성자
+	public Employee() {
 	}
 
 	Employee(String name, int salary) {
@@ -31,4 +32,5 @@ public class Employee {
 	public void getInformation() {
 		System.out.println( "이름:" + name + "연봉:" + salary );
 	}
+
 }
