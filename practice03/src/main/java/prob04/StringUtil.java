@@ -5,6 +5,9 @@ public class StringUtil {
     	
     	String[] result = new String[str.length];
         for(int i = 0; i < str.length; i++) {
+//        	if (str[i] == null) {
+//        		System.out.println("");
+//        	}
         	result[str.length-1] += str[i];
         	//System.out.print(result[str.length-1]);
         }
