@@ -1,5 +1,7 @@
 package com.bitacademy.paint.i;
 
+import com.bitacademy.paint.shape.Rectangle;
+
 public interface Drawable {
 	void draw();
 }
@@ -27,4 +29,19 @@ public interface Drawable {
 *        System.out.println(c instanceof Drawable);
 * 
 * 하지만 interface는 hierachy와 상관없이 instanceof 연산자를 사용할 수 있다.
+*/
+
+// 부모클래스의 메소드를 동일한 이름으로 재 작성 (같은 이름, 같은 리턴 타입, 같은 시그너쳐)
+/*
+
+[Rectangle]
+@Override
+public void draw() {
+	System.out.println("사각형을 그렸습니다.");
+}
+
+[Main]
+Rectangle rectangle = new Rectangle();
+		draw(rectangle);
+
 */

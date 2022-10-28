@@ -6,6 +6,7 @@ public class T8Point implements Drawable{
 	private int x;
 	private int y;
 	
+	// 기본 생성자 생성
 	public T8Point() {
 	}
 	

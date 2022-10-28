@@ -43,18 +43,21 @@ public class T1Goods {
 		return price;
 	}
 
+    // private 필드를 메소드를 통해 조건을 부여하여 보호할 수 있다.
 	public void setPrice(int price) {
 		if(price < 0) {
-			price = 0;    // private 필드를 메소드를 통해 조건을 부여하여 보호할 수 있다.
+			price = 0;
 		}
 		this.price = price;
 	}
-
-	public int getCountStock() {   // 매개변수 없고, 리턴값 있음
+	
+	 // 매개변수 X, 리턴값 O
+	public int getCountStock() {
 		return countStock;
 	}
 
-	public void setCountStock(int countStock) {  // 매개변수 있고, 리턴값 없음
+	 // 매개변수 O, 리턴값 X
+	public void setCountStock(int countStock) { 
 		this.countStock = countStock;
 	}
 
@@ -73,17 +76,19 @@ public class T1Goods {
 
 	// @Override
 	// source > generate to string
-	// GoodsApp에 println(객체)하면 객체의 tostring 츨력
+	// GoodsApp에 println(객체)하면 객체의 toString 츨력
 	public String toString() {
 		return "Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold=" + countSold
 				+ "]";
 	}
 
-	public void showInfo() {   // 매개변수 없고, 리턴값 없음
+	 // 매개변수 X, 리턴값 X
+	public void showInfo() {
 		System.out.println("Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold=" + countSold+ "]");
 		
 	}
 
+	 // 매개변수 O, 리턴값 O
 	public int calcDiscountPrice(double discountRate) {
 		return (int)(price * discountRate);
 	}
