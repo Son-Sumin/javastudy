@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class FileTest {
-
+// CheckedException 확인
 	public static void main(String[] args) {
 		FileInputStream fis = null; // 지역변수 밖으로 뺄 때 초기값 null로 주기
 
