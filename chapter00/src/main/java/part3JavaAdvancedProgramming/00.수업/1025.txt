@@ -18,36 +18,33 @@ A, B method가 같은 data로 접근해야할 경우 A method가 진행시 lock�
 외부 data는 invertable, only read
 함수를 활용하여 data에서 return을 산출
 절차지향 언어에서의 함수랑 다른 의미
-원래 data는 바뀌지 않고 여러 함수들이 접근하여 결과 산출
+원래 data는 바뀌지 않고 여러 함수들이 접근하여 결과 산출, 원래 data 유지
 
-Static 이 붙으면 객체를 생성하지 않아도 실행가능
-python의 전역함수 같은 느낌
+Static 이 붙으면 객체를 생성하지 않아도 실행가능(python의 전역함수 같은 느낌)
 다만 접근방법이 클래스 안에 있는 static 함수를 위해 클래스 명시 .main 같이
 
 * 객체;
-정보를 효율적으로 관리하기 위하여 의미를 부여하고 분류하는 논리적 단위
-
-도메인 분석을 통해 클래스 생성
-
-객체는 속성(변수, 필드)와 기능(메소드)의 집합
-클래스는 객체를 정의한 것
-객체는 인스턴스의 일반적 의미
-메모리가 있는 객체를 인스턴스라 한다
-클래스에서 인스턴스를 생성하는 것을 인스턴스화(new 붙이기, 객체 생성)라고 한다.
+ - 정보를 효율적으로 관리하기 위하여 의미를 부여하고 분류하는 논리적 단위
+ - 객체는 속성(변수, 필드)와 기능(메소드)의 집합
+ - 도메인 분석을 통해 클래스 생성
+ - 클래스는 객체를 정의한 것
+ - 객체는 인스턴스의 일반적 의미
+ - 메모리가 있는 객체를 인스턴스라 한다
+ - 클래스에서 인스턴스를 생성하는 것을 인스턴스화(new 붙이기, 객체 생성)라고 한다.
 ---------------------------------------------------
 [3.2] Class
 Goods, GoodsApp 참고
 * jvm 구조 >>  java chapter03.GoodApp (실행)
        ┌ --------------------------------------------------------------------┐
 
-     [Method Area]
+  [Method Area]
          └> class loader 통해 class가 저장되는 공간
 	안에 class loader 있음
 	target에 있는 classes path에서 소스 갖고 오기(class loading)
 	
 	GoodApp 갖고 왔고 그 안에 필드정보, 메소드 코드, static 메소드, static 변수
-	 └> 필드정보, 메소드 코드; instance 관련 / static 메소드, static 변수
-	 └> intance 정보(객체와 상관/필드정보, 메소드 코드), static 정보(void main)
+	 └> 필드정보, 메소드; instance 관련 / static 메소드, static 변수
+	 └> intance 정보(객체와 상관/필드정보, 메소드), static 정보(void main, )
 	객체 Goods를 갖고오기 위해 class loading again
 	heap에서 Goods 필드 확인 후 내용 생성, 내용은 초기값
 	stack에서 지역변수 사용 끝나면 pop
@@ -57,7 +54,7 @@ Goods, GoodsApp 참고
         └> Goods.countOfGoods로 접근이 FM이나 같은 클래스 내에선 클래스명 생략 가능
         ---------------------------------------------------------------------
 
-     [stack]; list의 한정적 의미, 순서대로만 작성 가능
+  [stack]; list의 한정적 의미, 순서대로만 작성 가능
          └> stack 자료 구조 기능 특징; 넣고 빼기 (FILO; First in Last out)
 	stack s
 	s.push("A") ; 추가하기
@@ -72,7 +69,7 @@ Goods, GoodsApp 참고
          └> 변수가 살아있는 범위; {} 범위 block scope
         -----------------------------------------------------------------------
 
-      [heap] ≒ instance
+  [heap] ≒ instance
          └> class 내용 생성
 	 └> instance 변수 생성
 
@@ -115,7 +112,7 @@ Goods2, Goods2App, DiscountGood2 참고
 
 1. void m(int i, int j)
 2. void m(int j, int i)  
-1 = 2   => 부모, 자식 관계에서 존재 가능 => overload
+1 = 2(시그니처 동일)   => 부모, 자식 관계에서 존재 가능 => overload
 	=> 같은 class 존재 불가
 
 ** signiture => 파라미터 갯수, 타입, 순서
