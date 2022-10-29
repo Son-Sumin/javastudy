@@ -1,0 +1,124 @@
+[chat03-02객체지향 프로그래밍]
+
+* Procedure Programming; 구조적
+큰 덩어리를 절차적으로 쪼개어 각 절차마다 함수로 표현하는 함수 위주의 프로그래밍
+단점은 정보은닉, 캡슐화
+  ** 정보 은닉
+data 직접적으로 접근하는 것이 아니라 data를 객체 안의 method를 통해 간접적으로 data에 접근하는 것
+data를 직접 보거나 건들 수 없도록 정보 은닉함.
+
+* Object Orientied Programming
+멀티 스레드 프로그래밍;
+여러 method가 동시에 진행됨
+A, B method가 같은 data로 접근해야할 경우 A method가 진행시 lock을 걸고 다 마치면 A로 인해 변경된 data 접근하여 B method 실행됨
+치명적인 단점이 각 method의 진행 순서를 정할 수 없고, 알 수도 없음.
+
+* Functional Programming;
+외부의 data를 건들지 말자는 것이 주요 컨셉
+외부 data는 invertable, only read
+함수를 활용하여 data에서 return을 산출
+절차지향 언어에서의 함수랑 다른 의미
+원래 data는 바뀌지 않고 여러 함수들이 접근하여 결과 산출
+
+Static 이 붙으면 객체를 생성하지 않아도 실행가능
+python의 전역함수 같은 느낌
+다만 접근방법이 클래스 안에 있는 static 함수를 위해 클래스 명시 .main 같이
+
+* 객체;
+정보를 효율적으로 관리하기 위하여 의미를 부여하고 분류하는 논리적 단위
+
+도메인 분석을 통해 클래스 생성
+
+객체는 속성(변수, 필드)와 기능(메소드)의 집합
+클래스는 객체를 정의한 것
+객체는 인스턴스의 일반적 의미
+메모리가 있는 객체를 인스턴스라 한다
+클래스에서 인스턴스를 생성하는 것을 인스턴스화(new 붙이기, 객체 생성)라고 한다.
+---------------------------------------------------
+[3.2] Class
+Goods, GoodsApp 참고
+* jvm 구조 >>  java chapter03.GoodApp (실행)
+       ┌ ----------------------------------------------------------------┐
+
+     [Method Area]
+         └> class loader 통해 class가 저장되는 공간
+	안에 class loader 있음
+	target에 있는 classes path에서 소스 갖고 오기(class loading)
+	
+	GoodApp 갖고 왔고 그 안에 필드정보, 메소드 코드, static 메소드, static 변수
+	 └> 필드정보, 메소드 코드; instance 관련 / static 메소드, static 변수
+	 └> intance 정보(객체와 상관/필드정보, 메소드 코드), static 정보(void main)
+	객체 Goods를 갖고오기 위해 class loading again
+	heap에서 Goods 필드 확인 후 내용 생성, 내용은 초기값
+	stack에서 지역변수 사용 끝나면 pop
+	heap에서도 생성한 내용 out
+        └> class 변수, static 변수 생성 
+	(class가 loading될 때, static 함수 생성하면서 변수 지정 시 생성됨)
+        └> Goods.countOfGoods로 접근이 FM이나 같은 클래스 내에선 클래스명 생략 가능
+        --------------------------------------------------------------------
+
+     [stack]; list의 한정적 의미, 순서대로만 작성 가능
+         └> stack 자료 구조 기능 특징; 넣고 빼기 (FILO; First in Last out)
+	stack s
+	s.push("A") ; 추가하기
+	s.push("B") 
+	s.pop() ; 맨 위에 있는거 빼버리기
+	s.pop()
+	s.pop() ; 에러, 뺄 내용 없음, push만 가능
+	
+         └> 지역변수 push/pop ; 할 일 끝나면 pop
+	 └> main 함수 안에 있는 변수
+
+         └> 변수가 살아있는 범위; {} 범위 block scope
+        --------------------------------------------------------------------
+
+      [heap] ≒ instance
+         └> class 내용 생성
+	 └> instance 변수 생성
+
+
+        └-------------------------------------------------------------------┘
+
+* chapter03 > src > main > java > chapter03 > Goods.java | GoodsApp.java
+
+* eclipse Maven일 경우 src 대신 target 생성 후 classes를 path로 지정함
+chapter03 > target > classes(class path 지정) > chapter03 > Goods.class | GoodsApp.class
+---------------------------------------------------
+1025 오후
+[#3.2] 
+# 접근자; 접근제어
+변수, 메소드, 생성자에 붙일 수 있음
+제어 세기 1 > 2 > (디폴트) > 3
+생성자 없으면 디폴트, 하지만 접근자 꼭 명시하기!!!
+
+* 접근자 3가지
+Goods2, Goods2App, DiscountGood2 참고
+1. private
+ - 접근 제어 범위 : class 내부에서만 (외부에서는 모름 -> 정보은닉)
+외부에서 내용 입력을 위해 setName, getName 기재하기
+
+2. protected  (잘 사용 안함)
+ - 접근 제어 범위 : 같은 package에서만, 상속 관계에서 자식이 부모에게 접근 가능하게 함
+
+(디폴트)
+ - 접근 제어 범위 : 같은 package에서만
+
+3. public
+ - 접근 제어 범위 : 제한없음
+
+객체 ≒ bean ≒ object ≒ instance
+
+# 메소드
+반환타입; 객체가 오기도 함
+이름; 소문자로 시작, 대문자는 두번째 글자부터
+
+1. void m(int i, int j)
+2. void m(int j, int i)  
+1 = 2   => 부모, 자식 관계에서 존재 가능 => overload
+	=> 같은 class 존재 불가
+
+signiture => 파라미터 갯수, 타입, 순서
+
+1. void m(int a, double d)
+2. void m(double d, int a) 
+1 != 2   => 순서 위배 => 같은 class 존재 가능 => override
