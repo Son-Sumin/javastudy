@@ -2,7 +2,8 @@ package prob05;
 
 public class MyBase extends Base {
 
-	public void service(String s) {
+	@ Override
+	public void service(String s){
 		if (s.equals("낮")) {
 			System.out.println("낮에는 열심히 일하자!");
 		} else if (s.equals("밤")) {
