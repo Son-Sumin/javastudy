@@ -32,18 +32,18 @@ public class Unit {
 		/* 현재 위치에 정지 */
 	}
 	
-	public void show(boolean go) {
-		if (go) {
-			System.out.println("좌표(x, y) = (" + x + "," + y +")로 이동했습니다.");
-		} else {
-			System.out.println("현 위치에 멈췄습니다.");
-		}
-
+	public void show() {
 	}
 	
-	@Override
-	public void show() {
-		
+	public void show(boolean go) {
+		if (go) {
+			move();
+			System.out.println("좌표(x, y) = (" + x + "," + y +")로 이동했습니다.");
+		} else {
+			stop();
+			System.out.println("현 위치에 멈췄습니다.");
+		}
 	}
+
 
 }

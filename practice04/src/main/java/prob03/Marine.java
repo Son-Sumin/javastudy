@@ -16,6 +16,10 @@ public class Marine extends Unit {
 	public void stop() {
 	}
 	
+	@ Override
+	public void show() {
+	}
+	
 	public void stimPack() { 
 		/* 스팀팩을 사용한다.*/
 	}	

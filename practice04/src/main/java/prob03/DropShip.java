@@ -16,6 +16,10 @@ public class DropShip extends Unit {
 	public void stop() {
 	}
 	
+	@ Override
+	public void show() {
+	}
+	
 	public void load() {
 		/* 선택된 대상을 태운다.*/ 
 	}

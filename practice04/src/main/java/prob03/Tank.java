@@ -15,6 +15,10 @@ public class Tank extends Unit{
 	@ Override
 	public void stop() {
 	}
+	
+	@ Override
+	public void show() {
+	}
 
 	public void changeMode() {
 		/* 공격모드를 변환한다. */
