@@ -40,5 +40,10 @@ public class Unit {
 		}
 
 	}
+	
+	@Override
+	public void show() {
+		
+	}
 
 }
