@@ -12,7 +12,16 @@ public class Sort {
 		for (int i = 0; i < count; i++) {
 			System.out.print(array[i] + " ");
 		}
-
+		
+		int[] a = new int[count];
+		for (int i = 0; i < count; i++) {
+			if (array[i] < array[i++]) {
+				a[i] = array[i++];
+				a[i++] = array[i];
+			} 
+			System.out.print(a[i] + " ");
+		}
+			
 		//
 		// 정렬 알고리즘이 적용된 코드를 여기에 작성합니다.
 		//
