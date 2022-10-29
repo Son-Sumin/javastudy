@@ -1,12 +1,15 @@
 package prob03;
 
 public class Tank extends Unit{
-	// 현재 위치
 	private int x;
 	private int y;
 
+	public Tank(int x, int y) {
+		super(x, y);
+	}
+	
 	@ Override
-	public void move(int x, int y) {
+	public void move() {
 	}
 
 	@ Override

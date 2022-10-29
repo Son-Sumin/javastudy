@@ -1,12 +1,15 @@
 package prob03;
 
 public class DropShip extends Unit {
-	// 현재 위치
 	private int x;
 	private int y;
 	
+	public DropShip(int x, int y) {
+		super(x, y);
+	}
+
 	@ Override
-	public void move(int x, int y) {
+	public void move() {
 	}
 
 	@ Override
