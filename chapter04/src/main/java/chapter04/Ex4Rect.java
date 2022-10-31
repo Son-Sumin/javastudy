@@ -2,11 +2,11 @@ package chapter04;
 
 import java.util.Objects;
 
-public class Rect {
+public class Ex4Rect {
 	private int width;
 	private int height;
 	
-	public Rect(int width, int height) {
+	public Ex4Rect(int width, int height) {
 		this.width = width;
 		this.height = height;
 	}
@@ -29,7 +29,7 @@ public class Rect {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Rect other = (Rect) obj;
+		Ex4Rect other = (Ex4Rect) obj;
 		return height == other.height && width == other.width;
 	}
 	

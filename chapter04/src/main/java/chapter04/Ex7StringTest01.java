@@ -1,6 +1,6 @@
 package chapter04;
 
-public class StringTest01 {
+public class Ex7StringTest01 {
 
 	public static void main(String[] args) {
 		// c:\temp 출력 시 \\ 붙여서 escape를 escape하기

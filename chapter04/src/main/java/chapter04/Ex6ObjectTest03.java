@@ -1,6 +1,6 @@
 package chapter04;
 
-public class ObjectTest03 {
+public class Ex6ObjectTest03 {
 
 	public static void main(String[] args) {
 		String s1 = new String("hello");

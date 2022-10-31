@@ -1,11 +1,11 @@
 package chapter04;
 
-public class ObjectTest02 {
+public class Ex3ObjectTest02 {
 
 	public static void main(String[] args) {
-		Point p1 = new Point(10,20);
-		Point p2 = new Point(10,20);
-		Point p3 = p2;
+		Ex1Point p1 = new Ex1Point(10,20);
+		Ex1Point p2 = new Ex1Point(10,20);
+		Ex1Point p3 = p2;
 		
 		// 객체가 같다라는 것은 2가지 의미를 갖든다.
 		// 1. == : 두 객체의 동일성

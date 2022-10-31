@@ -1,9 +1,9 @@
 package chapter04;
 
-public class ObjectTest01 {
+public class Ex2ObjectTest01 {
 
 	public static void main(String[] args) {
-		Point p = new Point(10, 20); // class Point의 객체 p
+		Ex1Point p = new Ex1Point(10, 20); // class Point의 객체 p
 		
 //		Class klass = p.getClass();       // Object의 클래스 이름을 "Class"로 설정해놓음.
 //		System.out.println(klass);

@@ -3,19 +3,19 @@ package chapter04;
 import java.util.HashSet;
 import java.util.Set;
 
-public class HashSetTest {
+public class Ex5HashSetTest {
 
 	public static void main(String[] args) {
-		Set<Rect> set = new HashSet<>();
+		Set<Ex4Rect> set = new HashSet<>();
 
-		Rect r1 = new Rect(10, 20);
-		Rect r2 = new Rect(10, 20);
+		Ex4Rect r1 = new Ex4Rect(10, 20);
+		Ex4Rect r2 = new Ex4Rect(10, 20);
 
 		set.add(r1);
 		set.add(r2);
 
 		// for-each문 set에서 r 하나씩 빼기, 순서 없음
-		for (Rect r : set) {
+		for (Ex4Rect r : set) {
 			System.out.println(r);
 		}
 
