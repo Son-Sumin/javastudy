@@ -34,8 +34,4 @@ public class Ex5HashSetTest {
  *    - list(순서O, 중복O)  -> 자료 가져올 때 순서 활용
  *    - set(순서X, 중복X)  -> 자료 가져올 때 순서가 없으니 for문 활용
  *    - map(key와 value가 존재하여 일대일대응)  -> 자료 가져올 때 key 활용
- *    
- * 
- * 
- * 
  */
