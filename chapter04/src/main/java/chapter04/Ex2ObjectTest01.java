@@ -15,6 +15,8 @@ public class Ex2ObjectTest01 {
 		System.out.println(p.hashCode());  // address 기반의 해싱값; 해싱이란: int가 아닌 값들을 int로 변환
 										   // address X, reference X, 객체의 아이디라는 의미가 더 정확함
 										   // int로 만드는 것이 목적이고, 서로 다른 값을 갖게 하는 것을 보장할 수 없음. 같은 값 나올 수 있음.
+										   // 다르면 해싱값이 같게 나올 수 없다
+		      							   // 같게 나오면 같을 수도 있고 다를 수도 있다.
 		
 		System.out.println(p.toString());  // getClass() + "@" + hashCode()
 										   // DB를 다룰 경우 기본적으로 override함

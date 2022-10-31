@@ -11,11 +11,12 @@ public class Ex7StringTest01 {
 		
 		// \ : escape; 제어문자를 사용으로 인식
 		// \t: tab
-		// \r: 개행문자 carrige return; 타이핑하다가 줄만 바꿔 그 곳에서 출력
-		// \n = \r\n: new line, 개행 후 맨 앞에서 시작
+		// \r: 개행문자 carrige return; 그 줄 맨 앞으로
+		// \n = \r\n: new line, 개행 후 맨 앞에서 시작 (\n: 원래 줄만 바꿔 그 곳에서 출력을 의미함)
 		// \b: beep
 		
 		System.out.print("hello\tworld\n");
+		System.out.print("hello world1\r");
 		System.out.print("hello world");
 		
 		// '

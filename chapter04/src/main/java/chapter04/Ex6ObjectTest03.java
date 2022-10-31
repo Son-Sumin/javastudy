@@ -26,10 +26,3 @@ public class Ex6ObjectTest03 {
 	}
 
 }
-/*
-
-
-
-
-
-*/
