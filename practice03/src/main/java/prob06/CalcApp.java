@@ -2,6 +2,8 @@ package prob06;
 
 import java.util.Scanner;
 
+// refactorying
+
 public class CalcApp {
 
 	public static void main(String[] args) {
