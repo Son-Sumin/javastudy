@@ -1,9 +1,9 @@
 package chapter04;
 
-public class Ex2ObjectTest01 {
+public class Ex1ObjectTest01 {
 
 	public static void main(String[] args) {
-		Ex1Point p = new Ex1Point(10, 20); // class Point의 객체 p
+		Ex3Point p = new Ex3Point(10, 20); // class Point의 객체 p
 		
 //		Class klass = p.getClass();       // Object의 클래스 이름을 "Class"로 설정해놓음.
 //		System.out.println(klass);
@@ -15,8 +15,8 @@ public class Ex2ObjectTest01 {
 		System.out.println(p.hashCode());  // address 기반의 해싱값; 해싱이란: int가 아닌 값들을 int로 변환
 										   // address X, reference X, 객체의 아이디라는 의미가 더 정확함
 										   // int로 만드는 것이 목적이고, 서로 다른 값을 갖게 하는 것을 보장할 수 없음. 같은 값 나올 수 있음.
-										   // 다르면 해싱값이 같게 나올 수 없다
-		      							   // 같게 나오면 같을 수도 있고 다를 수도 있다.
+										   // 내용이 다르면 해싱값이 같게 나올 수 없다
+		      							   // 해싱값이 같게 나오면 내용이 같을 수도 있고 다를 수도 있다.
 		
 		System.out.println(p.toString());  // getClass() + "@" + hashCode()
 										   // DB를 다룰 경우 기본적으로 override함

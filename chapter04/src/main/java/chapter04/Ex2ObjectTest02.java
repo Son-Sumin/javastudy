@@ -1,11 +1,11 @@
 package chapter04;
 
-public class Ex3ObjectTest02 {
+public class Ex2ObjectTest02 {
 
 	public static void main(String[] args) {
-		Ex1Point p1 = new Ex1Point(10,20);
-		Ex1Point p2 = new Ex1Point(10,20);
-		Ex1Point p3 = p2;
+		Ex3Point p1 = new Ex3Point(10,20);
+		Ex3Point p2 = new Ex3Point(10,20);
+		Ex3Point p3 = p2;
 		
 		// 객체가 같다라는 것은 2가지 의미를 갖든다.
 		// 1. == : 두 객체의 동일성
@@ -19,10 +19,11 @@ public class Ex3ObjectTest02 {
 		// 부모 클래스 Object의 기본 구현인 동일성(==)과 같다.
 		// 내용비교를 하려면 override를 해야한다.
 		
-		System.out.println(p1.equals(p2));  // 내용은 같으나 객체가 서로 다름
-											// object의 동질성 비교는 기본(동일성) 구현
-		// equals는 내용 비교를 하며, hash와 같이 override 해야한다. 원칙!!!
-		// 두 객체가 같은지 물어보면 먼저 해싱값 비교 후 같으면 equals 이용해서 내용 비교하여 한 번 더 확인, 다르면 다른 것으로 취급
+		System.out.println(p1.equals(p2));
+		// 내용은 같으나 객체가 서로 다름
+		// 구체적인 내용이 없을 시 object의 동질성 비교는 기본(동일성) 구현
+		// equals는 내용 비교를 하며, hashCode와 같이 override 해야한다. 원칙!!!
+		// 두 객체가 같은지 물어보면 먼저 해싱값 비교 후 같으면 equals 이용해서 내용 비교하여 한 번 더 확인, 처음부터 해싱값이 다르면 다른 것으로 취급
 		// equals에 구체적인 내용 부여가 없을 경우 Object 내용 이어받아서 기본인 동일성 구현
 		/*  public boolean equals(Object obj) {
         		return (this == obj);

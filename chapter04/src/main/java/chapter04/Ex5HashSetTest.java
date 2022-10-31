@@ -26,8 +26,7 @@ public class Ex5HashSetTest {
 /*
  * 자바 제공 자료구조 클래스 => collection Frameworks
  *   => 객체 동일 여부가 아니라 내용(동질성)을 봐야함. 자료구조는 내용 비교!!
- *   
- * List, Map, Set, Stack, ...
+ *   ex. List, Map, Set, Stack, ...
  * HashSet
  *    1. 순서 여부
  *    2. 중복 여부

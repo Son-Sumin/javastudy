@@ -2,11 +2,11 @@ package chapter04;
 
 import java.util.Objects;
 
-public class Ex1Point {
+public class Ex3Point {
 	private int x;
 	private int y;
 	
-	public Ex1Point(int x, int y) {
+	public Ex3Point(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
@@ -29,7 +29,7 @@ public class Ex1Point {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Ex1Point other = (Ex1Point) obj;
+		Ex3Point other = (Ex3Point) obj;
 		return x == other.x && y == other.y;  // 내용 비교
 	}
 	
