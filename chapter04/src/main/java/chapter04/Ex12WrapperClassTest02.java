@@ -13,16 +13,16 @@ public class Ex12WrapperClassTest02 {
 		
 		System.out.println(s1 + " : " + s2 + " : " + s3);
 
-		
+		// 문자 -> 숫자(16진수로 표현됨)
 		char c = 'A';
 		int i2 = Character.getNumericValue(c);
-		System.out.println(i2);  // 16진수로 표현됨
+		System.out.println(i2);
 		
-		// 2진수
+		// 2진수 - > 16진수
 		String s4 = Integer.toBinaryString(15);
 		System.out.println(s4);
 		
-		// 16진수
+		// 16진수 - > 2진수
 		String s5 = Integer.toHexString(c);
 		System.out.println(i2);
 
