@@ -21,7 +21,8 @@ public class ObjectTest02 {
 		
 		System.out.println(p1.equals(p2));  // 내용은 같으나 객체가 서로 다름
 											// object의 동질성 비교는 기본(동일성) 구현
-											// equals는 hash와 같이 override 해야한다. 원칙!!!
+		// equals는 내용 비교를 하며, hash와 같이 override 해야한다. 원칙!!!
+		// 두 객체가 같은지 물어보면 먼저 해싱값 비교 후 같으면 equals 이용해서 내용 비교하여 한 번 더 확인, 다르면 다른 것으로 취급
 		// equals에 구체적인 내용 부여가 없을 경우 Object 내용 이어받아서 기본인 동일성 구현
 		/*  public boolean equals(Object obj) {
         		return (this == obj);
