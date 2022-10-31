@@ -15,6 +15,6 @@ public abstract class Bird {
 	public abstract void sing();
 	
 	public String toString() {
-		return "";
+		return "Bird[name =" + name + "]";
 	}
 }
