@@ -3,7 +3,7 @@ package collection;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class QueueTest {
+public class Ex10QueueTest {
 
 	public static void main(String[] args) {
 		Queue<String> q = new LinkedList<>();
