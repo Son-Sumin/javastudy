@@ -3,7 +3,7 @@ package collection;
 import java.util.Enumeration;
 import java.util.Vector;
 
-public class VectorTest01 {
+public class Ex01VectorTest01 {
 	//예전 버전 Vector는 Iterator 지원 못 받았었지만 지금은 가능
 	
 	public static void main(String[] args) {

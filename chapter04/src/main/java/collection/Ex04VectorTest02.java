@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
 
-public class VectorTest02 {
+public class Ex04VectorTest02 {
 
 	public static void main(String[] args) {
 		List<String> list = new Vector<>();
