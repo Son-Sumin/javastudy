@@ -15,6 +15,7 @@ public class DigitThread extends Thread {
 
 	@Override
 	public void run() {
+		  // 같은 객체를 공유하는 thread를 여러 개 진행시킨다면 해당 부분 synchronized 블락 안에 넣기
 		synchronized(list) {
 			list.add(null);
 		}
