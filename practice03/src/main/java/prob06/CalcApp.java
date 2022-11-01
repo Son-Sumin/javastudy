@@ -24,32 +24,32 @@ public class CalcApp {
 				System.out.println(">> 알 수 없는 식입니다.");
 				continue;
 			}
-			
+
 			int x = Integer.parseInt(tokens[0]);
 			int y = Integer.parseInt(tokens[2]);
-			
+
 			switch (tokens[1]) {
 			case "+": {
 				Add add = new Add();
-				add.setValue(x,y);
+				add.setValue(x, y);
 				add.calculate();
 				break;
 			}
 			case "-": {
 				Sub sub = new Sub();
-				sub.setValue(x,y);
+				sub.setValue(x, y);
 				sub.calculate();
 				break;
 			}
 			case "*": {
 				Mul mul = new Mul();
-				mul.setValue(x,y);
+				mul.setValue(x, y);
 				mul.calculate();
 				break;
 			}
 			case "/": {
 				Div div = new Div();
-				div.setValue(x,y);
+				div.setValue(x, y);
 				div.calculate();
 				break;
 			}
@@ -60,7 +60,6 @@ public class CalcApp {
 		}
 
 		scanner.close();
-
 	}
 
 }
