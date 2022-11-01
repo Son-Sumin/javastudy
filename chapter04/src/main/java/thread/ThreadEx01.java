@@ -14,7 +14,7 @@ public class ThreadEx01 {
 		for(char c = 'a'; c <= 'z'; c++) {
 			System.out.print(c);
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(500);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			} // 하나 찍고 1000밀리초 쉬고 실행 
