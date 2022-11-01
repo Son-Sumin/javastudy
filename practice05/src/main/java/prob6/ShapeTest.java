@@ -24,3 +24,5 @@ public class ShapeTest {
 		}
 	}
 }
+
+// Math.squt();
