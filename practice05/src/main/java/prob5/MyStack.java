@@ -3,36 +3,21 @@ package prob5;
 import java.util.Arrays;
 
 public class MyStack {
-	private String[] buffer;  // 수정없이 지정타입 외 다른 타입으로 사용하는 방법 generic
+	private String[] st;  // 수정없이 지정타입 외 다른 타입으로 사용하는 방법 generic
 	
 	public MyStack(int size) {
-		StringBuffer buffer = new StringBuffer(size);
-		if(buffer.length() > size) {
-			size = size + buffer.length();
-		} else {
+		String[] st = new String[size];
+		if(st.length > size) {
+			size = size + st.length;
+		} 
 			return;
-		}
-	}
-
-	public void push(String string) {
-		StringBuffer buffer = new StringBuffer();
-		for(int i = 0; i < buffer.length(); i++) {
-			buffer.append(string);
-		}
-		
-//		String s2 = "";
-//		for (int i = 0; i <= 9; i++) {
-//			// s2  = s2 + i;  이것은 아래와 같이 내부적으로 돌아감
-//			s2 = new StringBuffer(s2).append(i).toString();
-//		}
-//		System.out.println(s2);
 	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + Arrays.hashCode(buffer);
+		result = prime * result + Arrays.hashCode(st);
 		return result;
 	}
 
@@ -45,21 +30,27 @@ public class MyStack {
 		if (getClass() != obj.getClass())
 			return false;
 		MyStack other = (MyStack) obj;
-		return Arrays.equals(buffer, other.buffer);
+		return Arrays.equals(st, other.st);
 	}
 
+	public void push(String string) {
+		for(int i = 0; i < 6; i++) {
+			st[i] = string;
+		}
+		System.out.println("OKOK");
+	}
+
+
 	public boolean isEmpty() {
-		StringBuffer buffer = new StringBuffer();
-		if (buffer.length() != 0) {
+		if (st.length != 0) {
 		
 		}
 			return false;
 	}
 
 	public String pop() {
-		StringBuffer buffer = new StringBuffer();
-		for (int i = 0; i < buffer.length(); i--) {
-			buffer = null;
+		for (int i = 0; i < st.length; i--) {
+			st[i] = null;
 		}
 		return "";
 	}	
