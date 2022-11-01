@@ -12,6 +12,7 @@ public class AlphabetThread extends Thread {
 	@Override
 	public void run() {	
 		// 동기화 작업; 제어하지 못하는 자원과 thread들의 진행을 동기화시킴
+		// T1 진행시 다른 thread 접근 차단
 		synchronized(list) {
 			list.add(null);  // 예시를 위해 의미없이 넣음
 		}		
