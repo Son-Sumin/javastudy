@@ -10,7 +10,7 @@ public class Ex9StringTest03 {
 		System.out.println(s1.length());
 		System.out.println(s1.charAt(2));
 		System.out.println(s1.indexOf("abc"));
-		System.out.println(s1.indexOf("abc", 7 ));  // 찾는 시작점 부여, 못 찾으면 -1 출력
+		System.out.println(s1.indexOf("abc", 7 ));  // 찾는 시작점 부여(7번째부터 찾아라), 못 찾으면 -1 출력
 		System.out.println(s1.substring(3));  // 3부터 출럭
 		System.out.println(s1.substring(3,5));  // 3 ~ (5-1)까지 출력
 		
