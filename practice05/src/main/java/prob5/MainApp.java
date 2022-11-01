@@ -4,24 +4,26 @@ public class MainApp {
 
 	public static void main(String[] args) {
 //		try {
-			MyStack stack = new MyStack(5);
+			MyStack stack = new MyStack(3);
 			stack.push("Hello");
 			stack.push("World");
 			stack.push("!!!");
 			stack.push("java");
 			stack.push(".");
+			
+			System.out.println(stack);
 
 			while (stack.isEmpty() == false) {
 				String s = stack.pop();
 				System.out.println(s);
 			}
-
-			System.out.println("======================================");
-
-			stack = new MyStack(5);
-			stack.push("Hello");
-
-			System.out.println(stack.pop());
+//
+//			System.out.println("======================================");
+//
+//			stack = new MyStack(3);
+//			stack.push("Hello");
+//
+//			System.out.println(stack.pop());
 			//System.out.println(stack.pop());  // MyStackException 발생, catch문으로
 
 //		} catch (MyStackException ex) {
