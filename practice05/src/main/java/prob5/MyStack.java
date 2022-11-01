@@ -7,10 +7,10 @@ public class MyStack {
 	
 	public MyStack(int size) {
 		String[] st = new String[size];
-		if(st.length > size) {
-			size = size + st.length;
-		} 
-			return;
+//		if(st.length > size) {
+//			size = size + st.length;
+//		} 
+//			return;
 	}
 
 	@Override
@@ -34,7 +34,7 @@ public class MyStack {
 	}
 
 	public void push(String string) {
-		for(int i = 0; i < 6; i++) {
+		for(int i = 0; i < 10; i++) {
 			st[i] = string;
 		}
 		System.out.println("OKOK");
@@ -43,7 +43,6 @@ public class MyStack {
 
 	public boolean isEmpty() {
 		if (st.length != 0) {
-		
 		}
 			return false;
 	}
