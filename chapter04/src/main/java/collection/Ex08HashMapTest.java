@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class HashMapTest {	
+public class Ex08HashMapTest {	
 	public static void main(String[] args) {
 		Map<String, Integer> m = new HashMap<>();
 		

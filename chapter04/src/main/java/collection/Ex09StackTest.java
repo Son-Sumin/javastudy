@@ -3,7 +3,7 @@ package collection;
 import java.util.Stack;
 import java.util.Vector;
 
-public class StackTest {
+public class Ex09StackTest {
 
 	//public
 	// class Stack<E> extends Vector<E>
