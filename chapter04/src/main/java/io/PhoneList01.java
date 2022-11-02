@@ -20,7 +20,7 @@ public class PhoneList01 {
 			// IO가 아니라 순수하게 파일 정보를 알아내가
 			File file = new File("phone.txt");
 
-			if (file.exists()) {
+			if (!file.exists()) {
 				System.out.println("file not found");
 				return;
 			}
@@ -28,6 +28,7 @@ public class PhoneList01 {
 			System.out.println("=============파일정보==============");
 			System.out.println(file.getAbsolutePath()); // c부터 전체 path
 			System.out.println(file.length() + "bytes");
+			// 한 번 사용할 내용 굳이 객체 만들 필요없이 그냥 넣어버리기
 			// System.out.println(new Date(file.lastModified())); // 년월일 각각 뽑아낼 때 date 비추
 			// SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 			// String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new
