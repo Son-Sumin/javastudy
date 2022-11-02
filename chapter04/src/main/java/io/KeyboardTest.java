@@ -9,23 +9,25 @@ public class KeyboardTest {
 
 	public static void main(String[] args) {
 		BufferedReader br = null;
+
 		try {
 			// 1. 기반 스트림(표준입력, stdin, System.in), 자바 기본 제공함
-			
-			// 2. 보조 스트림1 (byte|byte|byte -> char  /  char보다 charset이 좋다, encoding 부여해야함)
+
+			// 2. 보조 스트림1 (byte|byte|byte -> char / char보다 charset이 좋다, encoding 부여해야함)
 			InputStreamReader isr = new InputStreamReader(System.in, "utf-8");
-			
+
 			// 3. 보조 스트림2 (char1|char2|char3|\n -> "char1char2char3")
 			br = new BufferedReader(isr);
-			
+
 			String line = null;
-			try {
-				while((line = br.readLine()) != null) {
-					if("quit".equals(line)) {
-						break;
-					}
-				} 
+			while ((line = br.readLine()) != null) {
+				if ("quit".equals(line)) {
+					break;
+				}
+
+				System.out.println(line);
 			}
+
 		} catch (UnsupportedEncodingException e) {
 			System.out.println("Error:" + e);
 		} catch (IOException e) {
@@ -35,11 +37,10 @@ public class KeyboardTest {
 				if (br != null) {
 					br.close();
 				}
-			} catch (Exception e) {
-				System.out.println();
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
 		}
-		
-		
-		}
+
 	}
+}
