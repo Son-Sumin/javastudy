@@ -17,7 +17,7 @@ public class FileCopy {
 			is = new FileInputStream("맹구.jpg");
 			os = new FileOutputStream("맹구copy.jpg");
 
-			int data = -1; // data를 다 읽을면 -1임
+			int data = -1; // data를 다 읽을면 -1로 표시하기로 약속!
 
 			while ((data = is.read()) != -1) {
 				os.write(data);
