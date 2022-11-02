@@ -5,7 +5,7 @@ import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 
-public class RequestHandler extends Thread {
+public class RequestHandler extends Thread {  // 요청받을 때마다 thread 하나씩 생성 -> multi-thread
 	private Socket socket;
 	
 	public RequestHandler( Socket socket ) {
