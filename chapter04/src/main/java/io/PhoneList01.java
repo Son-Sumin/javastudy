@@ -7,9 +7,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.StringTokenizer;
 
 public class PhoneList01 {
-// IO와 tokendiser 이용하기
+// IO와 tokenizer 이용하기
 // if문으로 에러처리할 수 있는데 exception 이용하는 것은 효율적이지 못하다
 // exception은 예측 못할 에러처리하는데 사용하기, exception은 내 코드의 모든 객체가 다 들어 있어 메모리를 많이 차지한다
 
@@ -49,7 +50,24 @@ public class PhoneList01 {
 			// 4. 처리
 			String line = null;
 			while ((line = br.readLine()) != null) {
-				System.out.println(line);
+				//System.out.println(line);
+				StringTokenizer st = new StringTokenizer(line, "\t ");  // 
+				
+				int index = 0;
+				while(st.hasMoreElements()) {
+					String token = st.nextToken();
+					if(index == 0) { //이름
+						System.out.println(token + ":");
+					} else if(index == 1) { //번호1
+						System.out.println(token + "-");
+					} else if(index == 2) { //번호2
+						System.out.println(token + "-");
+					} else { // 번호3
+						System.out.println(token);
+					}
+					index++;
+				}
+				System.out.println("");
 			}
 
 		} catch (IOException ex) {
