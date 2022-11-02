@@ -12,33 +12,34 @@ public class FileCopy {
 	public static void main(String[] args) {
 		InputStream is = null;
 		OutputStream os = null;
-		
+
 		try {
 			is = new FileInputStream("맹구.jpg");
 			os = new FileOutputStream("맹구copy.jpg");
-			
-			int data = -1;  // data를 다 읽을면 -1임
-			
-			while((data = is.read()) != -1) {
+
+			int data = -1; // data를 다 읽을면 -1임
+
+			while ((data = is.read()) != -1) {
 				os.write(data);
 			}
-			
+
 		} catch (FileNotFoundException e) {
 			System.out.println("file not found");
 		} catch (IOException e) {
 			System.out.println("error: " + e);
-		}
-		finally {
+		} finally {
 			try {
-				if(is != null) {
-					is.close();	
-				} if(os != null) {
-					os.close();	
-				} catch (IOException e) {
-					e.printStackTrace();
+				if (is != null) {
+					is.close();
 				}
-		
+				if (os != null) {
+					os.close();
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
+
 		}
+
 	}
 }
