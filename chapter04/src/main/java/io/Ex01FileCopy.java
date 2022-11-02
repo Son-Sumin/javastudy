@@ -29,7 +29,7 @@ public class Ex01FileCopy {
 			System.out.println("error: " + e);
 		} finally {
 			try {
-				if (is != null) {
+				if (is != null) {  // nullpointexception 에러 처리
 					is.close();
 				}
 				if (os != null) {

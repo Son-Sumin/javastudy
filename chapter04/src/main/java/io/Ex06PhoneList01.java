@@ -19,14 +19,14 @@ public class Ex06PhoneList01 {
 		BufferedReader br = null;
 
 		try {
-			// IO가 아니라 순수하게 파일 정보를 알아내가
+			// IO가 아니라 순수하게 파일 정보를 알아내기
 			File file = new File("phone.txt");
 
-			if (!file.exists()) {
+			if (!file.exists()) {  // 해당 파일이 존재하지 않을 경우 대비 FileNotFoundException 처리
 				System.out.println("file not found");
 				return;
 			}
-
+			
 			System.out.println("=============파일정보==============");
 			System.out.println(file.getAbsolutePath()); // c부터 전체 path
 			System.out.println(file.length() + "bytes");
