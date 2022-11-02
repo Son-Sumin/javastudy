@@ -13,7 +13,7 @@ public class Ex04BufferedReaderTest {
 		// 기반 스트림
 		// linux에서는 /(표준), window에서는 \를 /으로 만들어줌, 드라이브 붙이지 말기
 		try {
-			FileReader fr = new FileReader("./src/main/java/io/BufferedReaderTest.java");
+			FileReader fr = new FileReader("./src/main/java/io/Ex04BufferedReaderTest.java");
 
 			// 보조 스트림
 			br = new BufferedReader(fr);

@@ -33,8 +33,7 @@ public class Ex06PhoneList01 {
 			// 한 번 사용할 내용 굳이 객체 만들 필요없이 그냥 넣어버리기
 			// System.out.println(new Date(file.lastModified())); // 년월일 각각 뽑아낼 때 date 비추
 			// SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-			// String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new
-			// Date(file.lastModified()));
+			// String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(newDate(file.lastModified()));
 			System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date(file.lastModified())));
 
 			System.out.println("=============전화번호==============");
@@ -51,7 +50,6 @@ public class Ex06PhoneList01 {
 			// 4. 처리
 			String line = null;
 			while ((line = br.readLine()) != null) {
-				//System.out.println(line);
 				StringTokenizer st = new StringTokenizer(line, "\t ");  // (토큰화할 대상, 구분기준); 구분기분은 여러 개 나열
 				
 				int index = 0;
