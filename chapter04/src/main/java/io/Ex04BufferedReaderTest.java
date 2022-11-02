@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class BufferedReaderTest {
+public class Ex04BufferedReaderTest {
 
 	public static void main(String[] args) {
 		BufferedReader br = null;

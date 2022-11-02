@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class BufferedOutputStreamTest {
+public class Ex03BufferedOutputStreamTest {
 
 	public static void main(String[] args) {
 		BufferedOutputStream bos = null;

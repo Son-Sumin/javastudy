@@ -9,8 +9,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.StringTokenizer;
 
-public class PhoneList01 {
+public class Ex06PhoneList01 {
 // IO와 tokenizer 이용하기
+// tokenizer와 split의 차이로는, split은 단일 구분자, tokenizer는 다중 구분자 기준으로 토큰화 가능
 // if문으로 에러처리할 수 있는데 exception 이용하는 것은 효율적이지 못하다
 // exception은 예측 못할 에러처리하는데 사용하기, exception은 내 코드의 모든 객체가 다 들어 있어 메모리를 많이 차지한다
 
@@ -51,11 +52,11 @@ public class PhoneList01 {
 			String line = null;
 			while ((line = br.readLine()) != null) {
 				//System.out.println(line);
-				StringTokenizer st = new StringTokenizer(line, "\t ");  // 
+				StringTokenizer st = new StringTokenizer(line, "\t ");  // (토큰화할 대상, 구분기준); 구분기분은 여러 개 나열
 				
 				int index = 0;
-				while(st.hasMoreElements()) {
-					String token = st.nextToken();
+				while(st.hasMoreElements()) {  // 남은 토큰이 있는지, 있으면 true
+					String token = st.nextToken();  // 객체에서 다음 토큰 반환
 					if(index == 0) { //이름
 						System.out.println(token + ":");
 					} else if(index == 1) { //번호1

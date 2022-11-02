@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
 
-public class FileReaderTest {
+public class Ex02FileReaderTest {
 
 	public static void main(String[] args) {
 		Reader in = null;

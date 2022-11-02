@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class FileCopy {
+public class Ex01FileCopy {
 
 	public static void main(String[] args) {
 		InputStream is = null;

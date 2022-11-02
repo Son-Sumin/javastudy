@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class PhoneList02 {
+public class Ex07PhoneList02 {
 // scanner 사용하기
 
 	public static void main(String[] args) throws FileNotFoundException { // java main program이 내가 만든 에러 받기, 회피
