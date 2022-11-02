@@ -1,6 +1,5 @@
 package io;
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.text.SimpleDateFormat;
@@ -11,9 +10,6 @@ public class PhoneList02 {
 // scanner 사용하기
 
 	public static void main(String[] args) throws FileNotFoundException { // java main program이 내가 만든 에러 받기, 회피
-		BufferedReader br = null;
-
-		try {
 			File file = new File("phone.txt");
 
 			if (!file.exists()) {
@@ -29,7 +25,7 @@ public class PhoneList02 {
 			System.out.println("=============전화번호==============");
 			
 			Scanner scanner = new Scanner(file);
-			while(scanner.hasNextLine()) {  // line
+			while(scanner.hasNextLine()) {  // line?????????
 				String name = scanner.next();
 				String phone01 = scanner.next();
 				String phone02 = scanner.next();
