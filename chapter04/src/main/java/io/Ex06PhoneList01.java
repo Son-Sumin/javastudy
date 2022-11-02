@@ -49,9 +49,10 @@ public class Ex06PhoneList01 {
 			
 			// 4. 처리
 			String line = null;
-			while ((line = br.readLine()) != null) {
+			while ((line = br.readLine()) != null) {  // 개행기준으로 읽기
 				StringTokenizer st = new StringTokenizer(line, "\t ");  // (토큰화할 대상, 구분기준); 구분기분은 여러 개 나열
 				
+				 // st[i]처럼 해당 자리마다 번호가 부여된 개념이 아니라 index가 조건에 맞으면 그때 해당 토근 출력
 				int index = 0;
 				while(st.hasMoreElements()) {  // 남은 토큰이 있는지, 있으면 true
 					String token = st.nextToken();  // 객체에서 다음 토큰 반환
