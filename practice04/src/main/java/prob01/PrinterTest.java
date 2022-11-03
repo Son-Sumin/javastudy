@@ -11,13 +11,13 @@ public class PrinterTest {
 		printer.println("홍길동");
 		printer.println(new Point(10,20));  // Overloading again? Let's use Generic Method!
 		
-		System.out.println("-----generic + 가변 parameter----");
+		System.out.println("-----3. generic + 가변 parameter----");
 		
 		printer.println("홍길동");
 		printer.println(10, true);
 		printer.println(10, true, 5.7, new Point(10,20));
 		
-		System.out.println("--------가변 parameter--------");
+		System.out.println("--------2. 가변 parameter--------");
 		
 		// 가변 parameter
 		System.out.println(printer.sum(1));
