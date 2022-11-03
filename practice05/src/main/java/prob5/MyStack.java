@@ -60,6 +60,8 @@
 
 package prob5;
 
+// 객체지향 활용
+
 public class MyStack {
 	private int top;
 	private String[] buffer;
