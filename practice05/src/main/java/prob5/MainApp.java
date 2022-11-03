@@ -3,8 +3,8 @@ package prob5;
 public class MainApp {
 
 	public static void main(String[] args) {
-//		try {
-			MyStack stack = new MyStack(100);
+		try {
+			MyStack stack = new MyStack(3);
 			stack.push("Hello");
 			stack.push("World");
 			stack.push("!!!");
@@ -15,19 +15,18 @@ public class MainApp {
 				String s = stack.pop();
 				System.out.println(s);
 			}
-//
-//			System.out.println("======================================");
-//
-//			stack = new MyStack(3);
-//			stack.push("Hello");
-//
-//			System.out.println(stack.pop());
+
+			System.out.println("======================================");
+
+			stack = new MyStack(3);
+			stack.push("Hello");
+
+			System.out.println(stack.pop());
 			//System.out.println(stack.pop());  // MyStackException 발생, catch문으로
 
-//		} catch (MyStackException ex) {
-//			System.out.println(ex);
-//		}
+		} catch (MyStackException ex) {
+			System.out.println(ex);
+		}
 
 	}
-
 }
