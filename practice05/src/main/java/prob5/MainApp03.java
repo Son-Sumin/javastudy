@@ -1,6 +1,6 @@
 package prob5;
 
-public class MainApp02 {
+public class MainApp03 {
 
 // 코드 작성 시에는 타입 지정 안하고 complie 때 하기  => generic
 // 부모코드
