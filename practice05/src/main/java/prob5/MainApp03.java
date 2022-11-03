@@ -21,7 +21,7 @@ public class MainApp03 {
 
 			System.out.println("======================================");
 
-			stack = new MyStack03<>(3);  // <> 생략 가능
+			stack = new MyStack03<>(3);  // <내용> 생략 가능
 			stack.push("Hello");
 
 			System.out.println(stack.pop());

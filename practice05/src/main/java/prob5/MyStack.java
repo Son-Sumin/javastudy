@@ -75,7 +75,6 @@ public class MyStack {
 		if (top == buffer.length - 1) {
 			resize();
 		}
-
 		buffer[++top] = s;		
 	}
 

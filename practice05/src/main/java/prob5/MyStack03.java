@@ -1,6 +1,6 @@
 package prob5;
 
-//Generic Class
+//Generic Class; generic class 사용 시 표현법 확인
 
 public class MyStack03<T> {
 	private int top;
