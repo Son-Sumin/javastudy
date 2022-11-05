@@ -16,5 +16,3 @@ public class MusicPhone extends Phone {
 	}
 
 }
-
-// string 비교는 = 이 아니라 equals

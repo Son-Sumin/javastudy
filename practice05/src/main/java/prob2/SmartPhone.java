@@ -14,7 +14,9 @@ public class SmartPhone extends MusicPhone {
 	public void playApp() {
 		System.out.println("앱실행");
 	}
-/*
+}
+
+/* 참고
 	@Override
 	public void execute(String function) {
 		if ("앱".equals(function)) {
@@ -33,4 +35,3 @@ public class SmartPhone extends MusicPhone {
 		System.out.println("앱 실행");
 	}
 */
-}
