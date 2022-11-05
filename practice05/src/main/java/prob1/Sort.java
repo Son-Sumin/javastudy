@@ -16,6 +16,7 @@ public class Sort {
 		// 정렬
 		for (int i = 0; i < count; i++) {
 			for (int j = 0; j < count - 1; j++) {
+			//for (int j = 0; j < count - 1 - i; j++) {  ; i번 실행 시 마직막에서 i번째 항까지 정렬된 것이므로 '-i'
 				if (array[j] < array[j + 1]) {
 					int temp = array[j];
 					array[j] = array[j + 1];
