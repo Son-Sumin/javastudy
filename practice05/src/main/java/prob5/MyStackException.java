@@ -6,9 +6,5 @@ public class MyStackException extends Exception {
 	
 	public MyStackException(String message) {
 		super(message);
-	}
-	
-	public MyStackException() {
-		super("Prob5.MyException: stack is empty");
-	}
+	}	
 }

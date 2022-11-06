@@ -7,8 +7,8 @@ public class MyException extends Exception {
 		super(message);
 	}
 	
-	public MyException() {
-		super("MyException thrown");
-	}
+//	public MyException() {
+//		super("MyException thrown");
+//	}
 
 }
