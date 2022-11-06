@@ -13,7 +13,7 @@ public class ExceptionTest {
 
 		/*
 		 * 에러가 발생할 것 같은 코드를 try와 catch로 감싸기
-		 * catch(예외이름) 
+		 * 'catch(예외이름)' 
 		 * 예외는 던진다고 표현
 		 * 에러 처리를 못하겠으면 catch문에 e.printStackTrace();라도 넣어놓기
 		 * catch문 이후에 코드는 넣는 것은 비추
