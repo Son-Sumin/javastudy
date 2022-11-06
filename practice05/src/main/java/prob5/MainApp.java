@@ -21,6 +21,7 @@ public class MainApp {
 			stack = new MyStack(3);
 			stack.push("Hello");
 
+			System.out.println(stack.pop());
 			System.out.println(stack.pop());  // MyStackException 발생, catch문으로
 
 		} catch (MyStackException ex) {

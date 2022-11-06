@@ -14,7 +14,6 @@ public class MyStack02 {
 		if (top == buffer.length - 1) {
 			resize();
 		}
-
 		buffer[++top] = o;		
 	}
 
@@ -38,7 +37,6 @@ public class MyStack02 {
 		for (int i = 0; i <= top; i++) {
 			temp[i] = buffer[i];
 		}
-
 		buffer = temp;
 	}
 }

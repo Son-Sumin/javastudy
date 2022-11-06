@@ -2,7 +2,7 @@ package prob5;
 
 public class MainApp02 {
 
-// 코드 작성 시에는 타입 지정 안하고 complie 때 하기  => generic
+// 코드 작성 시 타입 지정 안하고 complie때 하기  => generic
 	
 	public static void main(String[] args) {
 		try {
@@ -27,13 +27,10 @@ public class MainApp02 {
 
 			stack = new MyStack02(3);
 			stack.push("Hello");
-
 			System.out.println(stack.pop());
 
 		} catch (MyStackException ex) {
 			System.out.println(ex);
 		}
-
 	}
-
 }
