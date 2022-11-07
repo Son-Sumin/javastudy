@@ -7,7 +7,7 @@ public class MyStack {
 	private String[] buffer;
 
 	public MyStack(int capacity) {
-		top = 0;  // 그냥 -1로 세팅, 0도 가능하고 그에 맞게 아래 숫자 수정 필요
+		top = -1;  // 그냥 -1로 세팅, 0도 가능하고 그에 맞게 아래 숫자 수정 필요
 		buffer = new String[capacity];
 	}
 
@@ -30,7 +30,7 @@ public class MyStack {
 	}
 
 	public boolean isEmpty() {
-		return top == 0;
+		return top == -1;  // 0
 	}
 
 	private void resize() {
